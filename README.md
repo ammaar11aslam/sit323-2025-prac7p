@@ -117,11 +117,3 @@ http://127.0.0.1:63403
 
 - Postman
 - curl
-
----
-
-## 📸 Screenshots (optional)
-
-- `kubectl get pods` showing running pods
-- `kubectl get svc` showing service exposure
-- Postman output or browser test of `/items` endpoint
