@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sit323-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sit323-app
+  template:
+    metadata:
+      labels:
+        app: sit323-app
+    spec:
+      containers:
+        - name: sit323-app
+          image: xxxenon859/sit323-app
+          ports:
+            - containerPort: 3000
+          env:
+            - name: MONGO_URI
+              value: "mongodb://mongouser:mongopass@mongo-service:27017"
